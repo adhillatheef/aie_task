@@ -43,9 +43,9 @@ class _ChooseProfileState extends State<ChooseProfile> {
                   shrinkWrap: true,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     mainAxisExtent: 45,
-                    crossAxisCount: 2, // Number of columns in the grid
-                    crossAxisSpacing: 10.0, // Optional spacing between columns
-                    mainAxisSpacing: 10.0, // Optional spacing between rows
+                    crossAxisCount: 2,
+                    crossAxisSpacing: 10.0,
+                    mainAxisSpacing: 10.0,
                   ),
                   itemBuilder: (BuildContext context, int index) {
                     return ChooseProfileWidget(text: items[index], onTap: (){
@@ -53,9 +53,9 @@ class _ChooseProfileState extends State<ChooseProfile> {
                         selectedIndex = index;
                         debugPrint("Selected Index $selectedIndex");
                       });
-                    }, isSelected: index == selectedIndex); // Return the ChooseProfileWidget
+                    }, isSelected: index == selectedIndex);
                   },
-                  itemCount: items.length, // The number of items in the grid
+                  itemCount: items.length,
                 )
               ],
             ),
